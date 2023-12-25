@@ -97,7 +97,6 @@ h3 {
     gap: 10px;
     flex-direction: column;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-    transform: scale(1);
 }
 
 .card::before{
@@ -111,7 +110,6 @@ h3 {
 .card:hover {
     transition: 0.4s ease;
     background-color: deeppink;
-    transform: scale(1.1);
     border: 5px solid white;
     box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
 }
