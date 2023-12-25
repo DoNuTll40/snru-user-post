@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Itim', sans-serif;
+    user-select: none;
+}
+
+body {
+    margin: 30px;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.user-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: lightpink;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    margin-bottom: 45px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    background-color: white;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.user {
+    color: white;
+    background-color: transparent;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.user:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+    background-color: deeppink;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+
+.user:hover::after{
+    content: '>>';
+    position: absolute;
+    left: 45px;
+}
+
+.user:active {
+    color: rgb(220, 220, 220);
+    background-color: rgb(255, 91, 178);
+}
+
+.post-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    background-color: lightpink;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+}
+
+.card::before{
+    content: 'CS125 Nuttawoot Chawna SNRU';
+    position: absolute;
+    bottom: 10px;
+    left: 32px;
+    color: white;
+}
+
+.card:hover {
+    transition: 0.4s ease;
+    background-color: deeppink;
+    transform: scale(1.1);
+    border: 5px solid white;
+    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.post-username {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.post-title {
+    background-color: white;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.post-body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
